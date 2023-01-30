@@ -73,7 +73,7 @@ impl Rewrite {
                 f.write_str("(")?;
                 rw.pretty(f, 0)?;
                 f.write_str(")")
-            },
+            }
             Rewrite::Deref(ref rw) => parenthesize_if(prec > 2, f, |f| {
                 write!(f, "*")?;
                 rw.pretty(f, 2)
