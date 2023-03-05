@@ -54,7 +54,7 @@ mod expr_rewrite;
 mod labeled_ty;
 mod log;
 mod pointer_id;
-mod trivial;
+mod ptr_effects;
 mod type_desc;
 mod util;
 
